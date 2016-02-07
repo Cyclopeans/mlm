@@ -1,152 +1,134 @@
-</div>
-         <!-- Content End -->
-         <!-- Footer Start -->
-         <footer id="footer">
-            <!-- Footer Top Start -->
-            <div class="footer-top">
-               <div class="container">
-                  <div class="row">
-                     <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-one">
-                        <h3>About</h3>
-                        <p> 
-                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
-                        </p>
-                     </section>
-                     <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-two">
-                        <h3>Twitter Stream</h3>
-                        <ul id="tweets">
-                        </ul>
-                     </section>
-                     <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-three">
-                        <h3>Contact Us</h3>
-                        <ul class="contact-us">
-                           <li>
-                              <i class="fa fa-map-marker"></i>
-                              <p> 
-                                 <strong class="contact-pad">Address:</strong> House: 325, Road: 2,<br> Mirpur DOHS <br>
-                                 Dhaka, Bangladesh 
-                              </p>
-                           </li>
-                           <li>
-                              <i class="fa fa-phone"></i>
-                              <p><strong>Phone:</strong> +880 111-111-111</p>
-                           </li>
-                           <li>
-                              <i class="fa fa-envelope"></i>
-                              <p><strong>Email:</strong><a href="http://demo.fifothemes.com/cdn-cgi/l/email-protection#bccfc9ccccd3cec8fcdad5dad3c8d4d9d1d9cf92dfd3d1"><span class="__cf_email__" data-cfemail="01727471716e7375416768676e7569646c64722f626e6c">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a></p>
-                           </li>
-                        </ul>
-                     </section>
-                     <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-four">
-                        <h3>Flickr Photostream</h3>
-                        <ul id="flickrfeed" class="thumbs"></ul>
-                     </section>
-                  </div>
-               </div>
-            </div>
-            <!-- Footer Top End --> 
-            <!-- Footer Bottom Start -->
-            <div class="footer-bottom">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 "> &copy; Copyright 2014 by <a href="#">Pixma</a>. All Rights Reserved. </div>
-                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
-                        <ul class="social social-icons-footer-bottom">
-                           <li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                           <li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                           <li class="dribbble"><a href="#" data-toggle="tooltip" title="Dribble"><i class="fa fa-dribbble"></i></a></li>
-                           <li class="linkedin"><a href="#" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                           <li class="rss"><a href="#" data-toggle="tooltip" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- Footer Bottom End --> 
-         </footer>
-         <!-- Scroll To Top --> 
-         <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
-      </div>
-      <!-- Wrap End -->
-      <section id="style-switcher">
-        <h2>Style Switcher <a href="#"><i class="fa fa-cog"></i></a></h2>
-        <div>
-           <h3>Predefined Colors</h3>
-           <ul class="colors">
-              <li><a title="Blue" class="blue" href="#"></a></li>
-              <li><a title="Green" class="green" href="#"></a></li>
-              <li><a title="Orange" class="orange" href="#"></a></li>
-              <li><a title="Purple" class="purple" href="#"></a></li>
-              <li><a title="Red" class="red" href="#"></a></li>
-              <li><a title="Magenta" class="magenta" href="#"></a></li>
-              <li><a title="Brown" class="brown" href="#"></a></li>
-              <li><a title="Gray" class="gray" href="#"></a></li>
-              <li><a title="Golden" class="golden" href="#"></a></li>
-              <li><a title="Teal" class="teal" href="#"></a></li>
-           </ul>
-           <h3>Layout Style</h3>
-           <div class="layout-style">
-              <select id="layout-style">
-                 <option value="1">Wide</option>
-                 <option value="2">Boxed</option>
-              </select>
-           </div>
-           <h3>Header Color</h3>
-           <div class="header-color">
-              <input type='text' class="header-bg" />
-           </div>
-           <h3>Footer Top Color</h3>
-           <div class="header-color">
-              <input type='text' class="footer-bg" />
-           </div>
-           <h3>Footer Bottom Color</h3>
-           <div class="header-color">
-              <input type='text' class="footer-bottom" />
-           </div>
-           <h3>Background Image</h3>
-           <ul id="bg" class="colors bg">
-              <li><a class="bg1" href="#"></a></li>
-              <li><a class="bg2" href="#"></a></li>
-              <li><a class="bg3" href="#"></a></li>
-              <li><a class="bg4" href="#"></a></li>
-              <li><a class="bg5" href="#"></a></li>
-              <li><a class="bg6" href="#"></a></li>
-              <li><a class="bg7" href="#"></a></li>
-              <li><a class="bg8" href="#"></a></li>
-              <li><a class="bg9" href="#"></a></li>
-              <li><a class="bg10" href="#"></a></li>
-           </ul>
-        </div>
-     </section>
-      <!-- The Scripts -->
-      <script src="<?php echo base_url()."public/js/";?>jquery.min.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>bootstrap.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>jquery.parallax.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>jquery.wait.js"></script> 
-      <script src="<?php echo base_url()."public/js/";?>modernizr-2.6.2.min.js"></script> 
-      <script src="<?php echo base_url()."public/js/";?>/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>jquery.nivo.slider.pack.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>jquery.prettyPhoto.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>superfish.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>tweetMachine.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>tytabs.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>jquery.gmap.min.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>circularnav.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>jquery.sticky.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>jflickrfeed.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>imagesloaded.pkgd.min.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>waypoints.min.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>spectrum.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>switcher.js"></script>
-      <script src="<?php echo base_url()."public/js/";?>custom.js"></script>
-   <script type="text/javascript">
-/* <![CDATA[ */
-(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
-/* ]]> */
-</script>
-</body>
+</div><!--main-content-->
+<div id="bottom-sidebar">
+                <div class="wrapper">
+                    <div class="row-fluid">
 
-<!-- Mirrored from demo.fifothemes.com/pixma/General/index.html by HTTrack Website Copier/3.x [XR&CO'2013], Mon, 11 Jan 2016 15:22:15 GMT -->
+                        <div class="span4 widget-area-3">
+                            <div class="widget">
+                                <h2 class="widget-title">Search</h2>
+                                <div class="search-box clearfix">
+                                    <form action="#" class="search-form clearfix" method="get">
+                                        <input type="text" onBlur="if (this.value == '')
+                                                    this.value = this.defaultValue;" onFocus="if (this.value == this.defaultValue)
+                                                    this.value = '';" value="Search..." name="s" class="search-text">
+                                        <input type="submit" value="" name="submit" class="search-submit">
+                                    </form><!-- search-form -->
+                                </div><!--search-box-->
+                                <p>Duis turpis mauris, sagittis vitae porttitor eu, posuere vel diam. Phasellus fermentum, sapien sit amet molestie mollis, urna est</p>
+                            </div><!--widget-->
+                        </div><!--span4-->
+
+                        <div class="span4 widget-area-4">
+                            <div class="widget kopa-social-widget">
+                                <h2 class="widget-title">Social</h2>
+                                <ul class="clearfix">
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-rss"></a></li>
+                                    <li><a href="#" class="fa fa-flickr"></a></li>
+                                    <li><a href="#" class="fa fa-dribbble"></a></li>
+                                    <li><a href="#" class="fa fa-vimeo-square"></a></li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus diam, dapibus et blandit at, pulvinar vel odio</p>
+                            </div><!--widget-->
+                        </div><!--span4-->
+
+                        <div class="span4 widget-area-5">
+                            <div class="widget kopa-newsletter-widget">
+                                <h2 class="widget-title">Newsletter</h2>
+                                <form action="http://upsidethemes.net/demo/nictitate/html/processNewsletterForm.php" method="post" class="newsletter-form clearfix">
+                                    <p class="input-email clearfix">
+                                        <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" name="email" value="Subscribe to newsletter" class="email" size="40">
+                                        <input type="submit" value="Subscribe" class="submit">
+                                    </p>
+                                </form>
+                                <div id="newsletter-response"></div>
+                                <p>Sign up to Our Newsletter & get attractive Offers by subscribing to our newsletters.</p>
+                            </div><!--widget-->
+                        </div><!--span4-->
+
+                    </div><!--row-fluid-->
+                </div><!--wrapper-->
+            </div><!--bottom-sidebar-->
+
+            <footer id="page-footer">
+                <div class="wrapper">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <p id="copyright">Copyrights. &copy; 2013 by KOPASOFT</p>
+                            <ul id="footer-menu" class="clearfix">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Term & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul><!--footer-menu-->
+                        </div><!--span12-->
+                    </div><!--row-fluid-->
+                </div><!--wrapper-->
+            </footer><!--page-footer-->
+      <p id="back-top">
+                <a href="#top">Back to Top</a>
+            </p>
+
+        </div><!--kopa-wrapper-->
+
+
+        <script src="<?php echo base_url()?>assets/frontend/js/jquery-1.8.3.min.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/superfish.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/retina.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/bootstrap.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/jquery.hoverdir.js"></script>
+    <script src="<?php echo base_url()?>assets/frontend/js/jquery.carouFredSel-6.0.4-packed.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/jquery.flexslider-min.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/jquery.prettyPhoto.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/jflickrfeed.min.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/jquery.validate.min.js"></script>
+      <script src="<?php echo base_url()?>assets/frontend/js/jquery.form.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/jquery.isotope.min.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/sequence.jquery-min.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/classie.js"></script>
+      <script src="<?php echo base_url()?>assets/frontend/js/cbpAnimatedHeader.min.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/styleswitch.js"></script>
+        <script src="<?php echo base_url()?>assets/frontend/js/custom.js" charset="utf-8"></script>
+
+        <script>
+      /mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+        if (!pageYOffset) window.scrollTo(0, 1);
+      }, 1000);
+
+      jQuery(document).ready(function(){
+        var options = {
+          nextButton: true,
+          prevButton: true,
+          animateStartingFrameIn: true,
+          autoPlayDelay: 3000,
+          preloader: true,
+          pauseOnHover: true,
+          preloadTheseFrames: [1]
+        };
+
+        var sequence = jQuery("#sequence").sequence(options).data("sequence");
+
+        sequence.afterLoaded = function(){
+          jQuery("#nav").fadeIn(100);
+          jQuery("#nav li:nth-child("+(sequence.settings.startingFrameID)+") img").addClass("active");
+        }
+
+        sequence.beforeNextFrameAnimatesIn = function(){
+          jQuery("#nav li:not(:nth-child("+(sequence.nextFrameID)+")) img").removeClass("active");
+          jQuery("#nav li:nth-child("+(sequence.nextFrameID)+") img").addClass("active");
+        }
+
+        jQuery("#nav li").click(function(){
+          jQuery(this).children("img").removeClass("active").children("img").addClass("active");
+          sequence.nextFrameID = jQuery(this).index()+1;
+          sequence.goTo(sequence.nextFrameID);
+        });
+      });
+    </script>
+
+    </body>
+
+<!-- Mirrored from upsidethemes.net/demo/nictitate/html/index-1.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 03 Feb 2016 10:40:51 GMT -->
 </html>
-
