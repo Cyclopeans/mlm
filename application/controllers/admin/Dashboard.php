@@ -21,11 +21,11 @@ class Dashboard extends CI_Controller {
 	 function __construct() {
         parent::__construct();        
         $this->layout->set_layout('admin_layout');        
+        authenticate();
     }
 
 	public function index()
-	{
-		
-		$this->layout->view('admin/dashboard');
+	{	
+		$this->layout->view('admin/dashboard/dashboard');		
 	}
 }

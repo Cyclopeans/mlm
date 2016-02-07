@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from upsidethemes.net/demo/nictitate/html/index-2.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 03 Feb 2016 10:52:35 GMT -->
+<head>
+        <meta charset="utf-8">
+        <title>Nictitate - HTML5 Responsive Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="css/bootstrap.css" media="screen" />
+        <link rel="stylesheet" href="css/font-awesome.css" media="all" />
+        <link rel="stylesheet" href="css/superfish.css" media="screen" />
+        <link rel="stylesheet" href="css/prettyPhoto.css" media="screen" />
+        <link rel="stylesheet" href="css/flexslider.css" media="screen" />
+        <link rel="stylesheet" href="css/sequencejs-theme.modern-slide-in.css" media="all">
+		<link rel="stylesheet" href="css/theme-options.css" media="all">
+        <link rel="stylesheet" href="style.css">        
+        <link rel="stylesheet" href="css/bootstrap-responsive.css" media="all">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="js/modernizr.custom.js"></script>
+    
+
+        <link href='../../../../fonts.googleapis.com/css0c2c.css?family=Rokkitt' rel='stylesheet' type='text/css'>
+        <link href='../../../../fonts.googleapis.com/cssd2d5.css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='../../../../fonts.googleapis.com/csse91b.css?family=Raleway:400,600,500' rel='stylesheet' type='text/css'>
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+        <!--[if IE 7]>
+            <link rel="stylesheet" href="css/ie7.css" type="text/css" media="all" />
+            <link rel="stylesheet" href="css/font-awesome-ie7.min.css" media="all" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+            <link rel="stylesheet" href="css/ie.css" type="text/css" media="all" />
+        <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="img/favicon.html">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    </head>
+    <body class="kopa-home-3">
+    
+    	<div id="theme-option">
+            <div class="theme-opt-wrapper">
+                        
+                <p class="kopa-select-layout">Layout Style</p>                
+                <p class="kopa-select-layout">
+                    <input type="radio" id="kopa-select-layout-wide" name="kopa-select-layout-choice" value="wide" checked="checked" onClick="return kopa_layout_CHANGE(jQuery(this).val());">
+                    <label for="kopa-select-layout-wide">Wide</label>                    
+                    <input type="radio" id="kopa-select-layout-boxed" name="kopa-select-layout-choice" value="boxed" onClick="return kopa_layout_CHANGE(jQuery(this).val());">
+                    <label for="kopa-select-layout-boxed">Boxed</label>
+                </p>
+                
+                
+                <a href="#" class="btn reset" onClick="return kopa_theme_option_reset_CLICK();">Reset</a>
+            </div><!--theme-opt-wrapper-->
+            <a href="#" class="open-close-button"><span class="fa fa-gear"></span></a><!--open-close-button-->
+        </div><!--theme-option -->
+        
+        <div class="kopa-wrapper">
+		
+			<div class="kopa-background"></div>
+			
+			<header id="page-header">
+				<div id="header-top">
+					<div class="wrapper">
+						<div class="row-fluid">
+							<div class="span12 clearfix">
+								<p class="hot-line">Call toll free: 0307 472 1942</p>
+								<div class="top-box clearfix">
+									<ul class="top-link clearfix">
+										<li><a href="#">Sign In</a>&nbsp;/&nbsp;<a href="#">Register</a></li>
+										<li>Shopping Cart - $0</li>
+									</ul>
+									<div class="search clearfix">
+										<a href="#" class="search-icon" title="Search">Search</a>
+										<div class="search-box">
+											
+											<form action="#" class="search-form clearfix" method="get">
+												<input type="text" onBlur="if(this.value=='')this.value=this.defaultValue;" onFocus="if(this.value==this.defaultValue)this.value='';" value="Search" name="s" class="search-text">
+												<input type="submit" value="Submit" name="submit" class="search-submit">
+											</form><!-- search-form -->
+										</div><!--search-box-->
+									</div><!--search-->
+								</div><!--top=box-->
+							</div><!--span12-->
+						</div><!--row-fluid-->
+					</div><!--wrapper-->
+				</div><!--header-top-->
+				
+				<div id="header-bottom" class="cbp-af-header">
+					<div class="wrapper">
+						<div class="row-fluid">
+							<div class="span12 clearfix">
+								<div id="logo-image">
+									<a href="index.html"><img src="placeholders/logo.png" alt="" /></a>
+								</div><!--logo-image-->
+								<nav id="main-nav">
+									<ul id="main-menu" class="clearfix">
+                                        <li class="current-menu-item">
+                                            <a href="index-1.html"><i class="fa fa-home"></i><span>Home</span></a>
+                                            <ul>
+                                                <li class="current-menu-item"><a href="index-1.html">Home 1</a></li>
+                                                <li><a href="index-2.html">Home 2</a></li>
+                                                <li><a href="index-3.html">Home 3</a></li>
+                                                <li><a href="index-4.html">Home 4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="blog-1.html"><i class="fa fa-pencil"></i><span>Blog</span></a>
+                                            <ul>
+                                                <li><a href="blog-1.html">Blog 1</a></li>
+                                                <li><a href="blog-2.html">Blog 2</a></li>
+                                                <li>
+                                                    <a href="single-standard-1.html">Single page</a>
+                                                    <ul>
+                                                        <li><a href="single-standard-1.html">Single page style 1</a></li>
+                                                        <li><a href="single-standard-2.html">Single page style 2</a></li>
+                                                        <li><a href="single-audio.html">Single page style 3</a></li>
+                                                        <li><a href="single-gallery.html">Single page style 4</a></li>
+                                                        <li><a href="single-video.html">Single page style 5</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="portfolio.html"><i class="fa fa-camera"></i><span>Portfolio</span></a></li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-star"></i><span>Features</span></a>
+                                            <ul>
+                                                <li><a href="about.html">About page</a></li>
+                                                <li><a href="elements.html">Elements page</a></li>
+												<li><a href="pricing-table.html">Pricing table page</a></li>
+                                                <li><a href="404.html">Error page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-gift"></i><span>Shop</span></a></li>
+                                        <li><a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+                                    </ul><!--main-menu-->
+									
+									<div id="mobile-menu">
+                                        <span>Menu</span>
+                                        <ul id="toggle-view-menu">
+                                            <li class="clearfix">
+                                                <h3><a href="#">Home</a></h3>
+                                                <span>+</span>
+                                                <div class="clear"></div>                    
+                                                <div class="menu-panel clearfix">
+                                                    <ul>
+                                                        <li><a href="index-1.html">Home style 1</a></li>
+                                                        <li><a href="index-2.html">Home style 2</a></li>
+                                                        <li><a href="index-3.html">Home style 3</a></li>
+                                                        <li><a href="index-4.html">Home style 4</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <h3><a href="#">Blog</a></h3>
+                                                <span>+</span>
+                                                <div class="clear"></div>                    
+                                                <div class="menu-panel clearfix">
+                                                    <ul>
+                                                        <li><a href="blog-1.html">Blog style 1</a></li>
+                                                        <li><a href="blog-2.html">Blog style 2</a></li>
+                                                        <li>
+                                                            <a href="#">Blog single</a>
+                                                            <ul>
+                                                                <li><a href="single-standard-1.html">Single style 1</a></li>
+                                                                <li><a href="single-standard-2.html">Single style 2</a></li>
+                                                                <li><a href="single-audio.html">Single style 3</a></li>
+                                                                <li><a href="single-gallery.html">Single style 4</a></li>
+                                                                <li><a href="single-video.html">Single style 5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix"><h3><a href="portfolio.html">Portfolio</a></h3></li>
+                                            <li class="clearfix">
+                                                <h3><a href="#">Pages</a></h3>
+                                                <span>+</span>
+                                                <div class="clear"></div>                    
+                                                <div class="menu-panel clearfix">
+                                                    <ul>
+                                                        <li><a href="about.html">About page</a></li>
+                                                        <li><a href="elements.html">Elements page</a></li>
+                                                        <li><a href="404.html">404 page</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>                                            
+                                            <li class="clearfix"><h3><a href="contact.html">Contact</a></h3></li>					
+                                        </ul><!--toggle-view-menu-->
+                                    </div><!--mobile-menu-->
+									
+								</nav><!--main-nav-->
+							</div><!--span12-->
+						</div><!--row-fluid-->
+					</div><!--wrapper-->
+				</div><!--header-bottom-->
+			</header><!--page-header-->
+			
+			<div id="main-content">
+				
+				<div class="widget sequence-wrapper">
+				
+					<a class="prev" href="#"></a>
+					<a class="next" href="#"></a>
+					
+					<div class="sequence-slider">
+					
+						<div id="sequence">
+							<ul>
+								<li id="intro">
+									<div class="title animate-in"><h2>Premium tech support</h2></div>
+									<div class="subtitle animate-in">
+										<h3>Quick Answers</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis metus vitae ligula elementum ut luctus lorem facilisis.</p>
+									</div>
+									<img class="model x animate-in" src="placeholders/slider/sequence/model1.png" alt="" />
+								</li>
+								<li id="creative">
+									<div class="title-2"><h2>Play Vimeo & YouTube Video</h2></div>
+									<div class="subtitle-2 animate-in">
+										<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.Lorem ipsum dolor sit amet.</p>
+									</div>
+									<div class="model-2-1">
+										<div class="video-wrapper">
+												<iframe src="http://player.vimeo.com/video/69882318?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="100%" height="307" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+										</div>
+									</div>
+								</li>
+								<li id="support" class="frame3">
+									<div class="title"><h2>Responsive Layouts</h2></div>
+									<div class="subtitle animate-in">
+										<h3>Desktop, Tablet and  Mobile phone</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus urna ut odio ornare et tempor dui tincidunt. Quisque</p>
+									</div>
+									<img class="model-3-1" src="placeholders/slider/sequence/model3-1.png" alt="" />
+									<img class="model-3-2" src="placeholders/slider/sequence/model3-2.png" alt="" />
+									<img class="model-3-3" src="placeholders/slider/sequence/model3-3.png" alt="" />
+									<img class="model-3-4" src="placeholders/slider/sequence/model3-4.png" alt="" />
+								</li>
+								<li id="shop">
+									<div class="title-3">
+										<h3>It's</h3>
+										<h2>Beautiful</h2>
+									</div>
+									<div class="subtitle-3 animate-in">
+										<h4>Whatever you Make !</h4>
+										<a href="#">Click here to Browse</a>
+									</div>
+								</li>
+							</ul>
+						</div><!--sequence-->
+						<ul id="nav">
+							<li><img src="placeholders/slider/sequence/tn-model1.html" alt="Model 1" /></li>
+							<li><img src="placeholders/slider/sequence/tn-model2.html" alt="Model 2" /></li>
+							<li><img src="placeholders/slider/sequence/tn-model3.html" alt="Model 3" /></li>
+						</ul>
+										
+					</div><!--sequence-slider-->
+					
+				</div><!--sequence-wrapper-->
+				
+				<div class="wrapper">
+				
+					<div class="row-fluid">
+					
+						<div class="span12 clearfix">
+						
+							<div class="widget kopa-intro-widget">
+
+                                <ul class="clearfix">
+                                    <li>
+                                        <article class="entry-item">
+                                            <h2 class="entry-title clearfix"><span class="fa fa-bolt"></span><a href="#">Clean Design</a></h2>
+                                            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.Lorem ipsum dolor sit amet.</p>
+                                            <a href="#" class="more-link clearfix">Read more <span class="fa fa-forward"></span></a>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="entry-item">
+                                            <h2 class="entry-title clearfix"><span class="fa fa-gear"></span><a href="#">Easy to customize</a></h2>
+                                            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.Lorem ipsum dolor sit amet.</p>
+                                            <a href="#" class="more-link clearfix">Read more <span class="fa fa-forward"></span></a>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="entry-item">
+                                            <h2 class="entry-title clearfix"><span class="fa fa-heart"></span><a href="#">Lot of options</a></h2>
+                                            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.Lorem ipsum dolor sit amet.</p>
+                                            <a href="#" class="more-link clearfix">Read more <span class="fa fa-forward"></span></a>
+                                        </article>
+                                    </li>
+                                </ul>
+
+                            </div><!--widget-->
+						
+						</div><!--span12-->
+						
+					</div><!--row-fluid-->
+				
+				</div><!--wrapper-->
+				
+				<div class="wrapper">
+					<div class="row-fluid">
+						<div class="span12 clearfix">
+							<div class="widget kopa-tagline-widget clearfix">
+								<div class="kopa-tagline-description">
+									<h4>Nictitate is available exclusively on ThemeForest</h4>
+									<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enimvulputate eget, arcu.</p>
+								</div>
+								<a href="#" class="kopa-button blue-button">Buy now for only 55$</a>
+							</div><!--widget-->
+						</div><!--span12-->
+					</div><!--row-fluid-->
+				</div><!--wrapper-->
+				
+				<div class="wrapper">
+					<div class="row-fluid">
+						<div class="span12 clearfix">
+							<div class="widget kopa-latest-work-widget">
+								<h2 class="widget-title"><span class="fa fa-briefcase"></span>Our Latest Work</h2>
+								<div class="list-carousel responsive" >
+									<ul class="kopa-latest-work-carousel">
+										<li style="width: 252px;">
+											<article class="entry-item clearfix">
+												<div class="entry-thumb hover-effect">
+													<div class="mask">
+														<a class="link-detail fa fa-link" href="#"></a>
+														<a class="link-gallery fa fa-search" href="placeholders/post-image/post-1.jpg" rel="prettyPhoto[kp-gallery-2]"></a>
+													</div>
+													<img src="placeholders/post-image/post-1.jpg" alt="" />
+												</div>
+												<div class="entry-content">
+													<h6 class="entry-title"><a href="#">Gois corporate card</a></h6>
+													<span class="entry-categories"><a href="#">Design</a>,&nbsp;<a href="#">Graphics</a></span>
+												</div><!--entry-content-->
+											</article><!--entry-item-->
+										</li>
+										<li style="width: 252px;">
+											<article class="entry-item clearfix">
+												<div class="entry-thumb hover-effect">
+													<div class="mask">
+														<a class="link-detail fa fa-link" href="#"></a>
+														<a class="link-gallery fa fa-search" href="placeholders/post-image/post-1.jpg" rel="prettyPhoto[kp-gallery-2]"></a>
+													</div>
+													<img src="placeholders/post-image/post-1.jpg" alt="" />
+												</div>
+												<div class="entry-content">
+													<h6 class="entry-title"><a href="#">Gois corporate card</a></h6>
+													<span class="entry-categories"><a href="#">Design</a>,&nbsp;<a href="#">Graphics</a></span>
+												</div><!--entry-content-->
+											</article><!--entry-item-->
+										</li>
+										<li style="width: 252px;">
+											<article class="entry-item clearfix">
+												<div class="entry-thumb hover-effect">
+													<div class="mask">
+														<a class="link-detail fa fa-link" href="#"></a>
+														<a class="link-gallery fa fa-search" href="placeholders/post-image/post-1.jpg" rel="prettyPhoto[kp-gallery-2]"></a>
+													</div>
+													<img src="placeholders/post-image/post-1.jpg" alt="" />
+												</div>
+												<div class="entry-content">
+													<h6 class="entry-title"><a href="#">Gois corporate card</a></h6>
+													<span class="entry-categories"><a href="#">Design</a>,&nbsp;<a href="#">Graphics</a></span>
+												</div><!--entry-content-->
+											</article><!--entry-item-->
+										</li>
+										<li style="width: 252px;">
+											<article class="entry-item clearfix">
+												<div class="entry-thumb hover-effect">
+													<div class="mask">
+														<a class="link-detail fa fa-link" href="#"></a>
+														<a class="link-gallery fa fa-search" href="placeholders/post-image/post-1.jpg" rel="prettyPhoto[kp-gallery-2]"></a>
+													</div>
+													<img src="placeholders/post-image/post-1.jpg" alt="" />
+												</div>
+												<div class="entry-content">
+													<h6 class="entry-title"><a href="#">Gois corporate card</a></h6>
+													<span class="entry-categories"><a href="#">Design</a>,&nbsp;<a href="#">Graphics</a></span>
+												</div><!--entry-content-->
+											</article><!--entry-item-->
+										</li>
+										<li style="width: 252px;">
+											<article class="entry-item clearfix">
+												<div class="entry-thumb hover-effect">
+													<div class="mask">
+														<a class="link-detail fa fa-link" href="#"></a>
+														<a class="link-gallery fa fa-search" href="placeholders/post-image/post-1.jpg" rel="prettyPhoto[kp-gallery-2]"></a>
+													</div>
+													<img src="placeholders/post-image/post-1.jpg" alt="" />
+												</div>
+												<div class="entry-content">
+													<h6 class="entry-title"><a href="#">Gois corporate card</a></h6>
+													<span class="entry-categories"><a href="#">Design</a>,&nbsp;<a href="#">Graphics</a></span>
+												</div><!--entry-content-->
+											</article><!--entry-item-->
+										</li>
+									</ul><!--kopa-latest-work-carousel-->
+									<div class="clearfix"></div>
+									<div class="carousel-nav clearfix">
+										<a id="prev-1" class="carousel-prev" href="#">&lt;</a>
+										<a id="next-1" class="carousel-next" href="#">&gt;</a>
+									</div>
+								</div><!--list-carousel-->
+							</div><!--widget-->
+						</div><!--span12-->
+					</div><!--row-fluid-->
+				</div><!--wrapper-->
+						
+				<div class="wrapper">
+					<div class="row-fluid">
+						<div class="span12 clearfix">
+							<div class="widget kopa-latest-post-widget">
+                                <h2 class="widget-title"><span class="fa fa-pencil"></span>Our Latest Post</h2>
+                                <ul class="clearfix">
+                                    <li>
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb hover-effect">
+                                                <div class="mask">
+                                                    <a class="link-detail fa fa-link" href="#"></a>
+                                                    <a class="link-gallery fa fa-search" href="placeholders/post-image/post-2.jpg" rel="prettyPhoto[kp-gallery-2]"></a>
+                                                </div>
+                                                <img src="placeholders/post-image/post-2.jpg" alt="" />
+                                            </div>
+                                            <div class="entry-content">
+                                                <h6 class="entry-title"><a href="#">Blog typography and design style</a><span></span></h6>
+                                                <span class="entry-date clearfix"><span class="fa fa-clock-o"></span>August 22, 2013</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb hover-effect">
+                                                <div class="mask">
+                                                    <a class="link-detail fa fa-link" href="#"></a>
+                                                    <a class="link-gallery fa fa-search" href="placeholders/post-image/post-2.jpg" rel="prettyPhoto[kp-gallery-2]"></a>
+                                                </div>
+                                                <img src="placeholders/post-image/post-27.jpg" alt="" />
+                                            </div>
+                                            <div class="entry-content">
+                                                <h6 class="entry-title"><a href="#">Blog typography and design style</a><span></span></h6>
+                                                <span class="entry-date clearfix"><span class="fa fa-clock-o"></span>August 22, 2013</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
+                                            </div>
+                                        </article>
+                                    </li>
+
+                                </ul>
+                                <a href="#" class="view-all">View All &raquo;</a>
+                            </div><!--widget-->
+						</div><!--span12-->
+					</div><!--row-fluid-->
+				</div><!--wrapper-->
+				
+				<div class="wrapper">
+					<div class="row-fluid">
+						<div class="span12 clearfix">
+							<div class="widget kopa-testimonial-widget">
+                                <h2 class="widget-title"><span class="fa fa-user"></span>Testimonials</h2>
+                                <div class="list-carousel responsive" >
+                                    <ul class="kopa-testimonial-carousel">
+                                        <li style="width: 530px;">
+                                            <article class="testimonial-detail clearfix">
+                                                <div class="avatar">
+                                                    <img src="placeholders/avatar/avatar-1.jpg" alt="" />
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <p>We are providing hosting services since 2006. In the past few years many small and large companies have trusted us to help their companies to grow in the Web World. Here is</p>
+                                                </div><!--testimonial-content-->
+                                            </article><!--testimonial-detail-->
+                                        </li>
+                                        <li style="width: 530px;">
+                                            <article class="testimonial-detail clearfix">
+                                                <div class="avatar">
+                                                    <img src="placeholders/avatar/avatar-1.jpg" alt="" />
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <p>We are providing hosting services since 2006. In the past few years many small and large companies have trusted us to help their companies to grow in the Web World. Here is</p>
+                                                </div><!--testimonial-content-->
+                                            </article><!--testimonial-detail-->
+                                        </li>
+                                        <li style="width: 530px;">
+                                            <article class="testimonial-detail clearfix">
+                                                <div class="avatar">
+                                                    <img src="placeholders/avatar/avatar-1.jpg" alt="" />
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <p>We are providing hosting services since 2006. In the past few years many small and large companies have trusted us to help their companies to grow in the Web World. Here is</p>
+                                                </div><!--testimonial-content-->
+                                            </article><!--testimonial-detail-->
+                                        </li>
+                                    </ul><!--kopa-latest-work-carousel-->
+                                    <div class="clearfix"></div>
+                                    <div class="carousel-nav clearfix">
+                                        <a id="prev-2" class="carousel-prev" href="#">&lt;</a>
+                                        <a id="next-2" class="carousel-next" href="#">&gt;</a>
+                                    </div>
+                                </div><!--list-carousel-->
+                            </div><!--widget-->
+						</div><!--span12-->
+					</div><!--row-fluid-->
+				</div><!--wrapper-->
+				
+			</div><!--main-content-->
+			
+			<div id="page-bottom">
+				<div class="wrapper">
+					<div class="row-fluid">
+						
+						<div class="span3">
+							<div class="widget widget_text">
+								<h2 class="widget-title">About us</h2>
+								<div class="textwidget">
+									<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+	Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+									<p>Donec nec justo eget felis facilisis fermentum.</p>
+								</div>
+							</div><!--widget-->
+						</div><!--span3-->
+						
+						<div class="span3">
+							<div class="widget kopa-widget-best-seller">
+								<h2 class="widget-title">Best sellers</h2>
+								<ul>
+									<li>
+										<article class="entry-item clearfix">
+											<div class="entry-thumb">
+												<a href="#"><img src="placeholders/76x76/76x76-1.jpg" alt="" /></a>
+											</div>
+											<div class="entry-content">
+												<h6 class="entry-title"><a href="#">Cool Demo T-Shirt</a></h6>
+												<strong>$65.00</strong>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="entry-item clearfix">
+											<div class="entry-thumb">
+												<a href="#"><img src="placeholders/76x76/76x76-1.jpg" alt="" /></a>
+											</div>
+											<div class="entry-content">
+												<h6 class="entry-title"><a href="#">Selected New Chila Dress</a></h6>
+												<strong>$65.00</strong>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="entry-item clearfix">
+											<div class="entry-thumb">
+												<a href="#"><img src="placeholders/76x76/76x76-1.jpg" alt="" /></a>
+											</div>
+											<div class="entry-content">
+												<h6 class="entry-title"><a href="#">Selected New Chila Dress</a></h6>
+												<strong>$65.00</strong>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div><!--widget-->
+						</div><!--span3-->
+						
+						<div class="span3">
+							<div class="widget kopa-widget-latest-review">
+								<h2 class="widget-title">Latest reviews</h2>
+								<ul>
+									<li>
+										<article class="entry-item clearfix">
+											<div class="entry-thumb">
+												<a href="#"><img src="placeholders/76x76/76x76-1.jpg" alt="" /></a>
+											</div>
+											<div class="entry-content clearfix">
+												<h6 class="entry-title"><a href="#">Tempor dolor nec lectus facilisis et consequat.</a></h6>
+												<ul class="kopa-rating clearfix">
+													<li><a href="#" class="fa fa-star"></a></li>
+													<li><a href="#" class="fa fa-star"></a></li>
+													<li><a href="#" class="fa fa-star-half-full"></a></li>
+													<li><a href="#" class="fa fa-star-o"></a></li>
+													<li><a href="#" class="fa fa-star-o"></a></li>
+												</ul>
+												<span class="entry-comments"><span class="fa fa-comment-o"></span><a href="#">3</a></span>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="entry-item clearfix">
+											<div class="entry-thumb">
+												<a href="#"><img src="placeholders/76x76/76x76-1.jpg" alt="" /></a>
+											</div>
+											<div class="entry-content clearfix">
+												<h6 class="entry-title"><a href="#">Lectus facilisis et consequat lectus malesuada.</a></h6>
+												<ul class="kopa-rating clearfix">
+													<li><a href="#" class="fa fa-star"></a></li>
+													<li><a href="#" class="fa fa-star"></a></li>
+													<li><a href="#" class="fa fa-star-half-full"></a></li>
+													<li><a href="#" class="fa fa-star-o"></a></li>
+													<li><a href="#" class="fa fa-star-o"></a></li>
+												</ul>
+												<span class="entry-comments"><span class="fa fa-comment-o"></span><a href="#">3</a></span>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="entry-item clearfix">
+											<div class="entry-thumb">
+												<a href="#"><img src="placeholders/76x76/76x76-1.jpg" alt="" /></a>
+											</div>
+											<div class="entry-content clearfix">
+												<h6 class="entry-title"><a href="#">Etiam sapien urna, mollis volutpat male</a></h6>
+												<ul class="kopa-rating clearfix">
+													<li><a href="#" class="fa fa-star"></a></li>
+													<li><a href="#" class="fa fa-star"></a></li>
+													<li><a href="#" class="fa fa-star-half-full"></a></li>
+													<li><a href="#" class="fa fa-star-o"></a></li>
+													<li><a href="#" class="fa fa-star-o"></a></li>
+												</ul>
+												<span class="entry-comments"><span class="fa fa-comment-o"></span><a href="#">3</a></span>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div><!--widget-->
+						</div><!--span3-->
+						
+						<div class="span3">
+							<div class="widget kopa-widget-flickr">
+								<h2 class="widget-title">Photo Flickr</h2>
+								<div class="flickr-wrap clearfix" id="flickr-feed-1">                    
+									<ul class="kopa-flickr-widget clearfix"></ul>
+								</div><!--flickr-wrap-->
+							</div><!--widget-->
+						</div><!--span3-->
+						
+						
+					</div><!--row-fluid-->
+				</div><!--wrapper-->
+			</div><!--page-bottom-->
+			
+			<div id="bottom-sidebar">
+				<div class="wrapper">
+					<div class="row-fluid">
+						
+						<div class="span4 widget-area-3">
+							<div class="widget">
+								<h2 class="widget-title">Search</h2>
+								<div class="search-box clearfix">
+									<form action="#" class="search-form clearfix" method="get">
+										<input type="text" onBlur="if (this.value == '')
+													this.value = this.defaultValue;" onFocus="if (this.value == this.defaultValue)
+													this.value = '';" value="Search..." name="s" class="search-text">
+										<input type="submit" value="" name="submit" class="search-submit">
+									</form><!-- search-form -->
+								</div><!--search-box-->
+								<p>Duis turpis mauris, sagittis vitae porttitor eu, posuere vel diam. Phasellus fermentum, sapien sit amet molestie mollis, urna est</p>
+							</div><!--widget-->
+						</div><!--span4-->
+						
+						<div class="span4 widget-area-4">
+                            <div class="widget kopa-social-widget">
+                                <h2 class="widget-title">Social</h2>
+                                <ul class="clearfix">
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-rss"></a></li>
+                                    <li><a href="#" class="fa fa-flickr"></a></li>
+                                    <li><a href="#" class="fa fa-dribbble"></a></li>
+                                    <li><a href="#" class="fa fa-vimeo-square"></a></li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus diam, dapibus et blandit at, pulvinar vel odio</p>
+                            </div><!--widget-->
+                        </div><!--span4-->
+						
+						<div class="span4 widget-area-5">
+							<div class="widget kopa-newsletter-widget">
+								<h2 class="widget-title">Newsletter</h2>
+								<form action="http://upsidethemes.net/demo/nictitate/html/processNewsletterForm.php" method="post" class="newsletter-form clearfix">
+									<p class="input-email clearfix">
+										<input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" name="email" value="Subscribe to newsletter" class="email" size="40">
+										<input type="submit" value="Subscribe" class="submit">
+									</p>
+								</form>
+								<div id="newsletter-response"></div>
+								<p>Sign up to Our Newsletter & get attractive Offers by subscribing to our newsletters.</p>
+							</div><!--widget-->
+						</div><!--span4-->
+						
+					</div><!--row-fluid-->
+				</div><!--wrapper-->
+			</div><!--bottom-sidebar-->
+			
+			<footer id="page-footer">
+				<div class="wrapper">
+					<div class="row-fluid">
+						<div class="span12">
+							<p id="copyright">Copyrights. &copy; 2013 by KOPASOFT</p>
+							<ul id="footer-menu" class="clearfix">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Term & Conditions</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul><!--footer-menu-->
+						</div><!--span12-->
+					</div><!--row-fluid-->
+				</div><!--wrapper-->
+			</footer><!--page-footer-->
+			<p id="back-top">
+                <a href="#top">Back to Top</a>
+            </p>
+		
+		</div><!--kopa-wrapper-->
+    
+        
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/retina.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.hoverdir.js"></script>
+        <script src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/jflickrfeed.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+    	<script src="js/jquery.form.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/sequence.jquery-min.js"></script>
+        <script src="js/classie.js"></script>
+    	<script src="js/cbpAnimatedHeader.min.js"></script>
+		<script src="js/styleswitch.js"></script>
+        <script src="js/custom.js" charset="utf-8"></script>
+        
+        <script>
+			/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+			  if (!pageYOffset) window.scrollTo(0, 1);
+			}, 1000);
+			
+			jQuery(document).ready(function(){
+				var options = {
+					nextButton: true,
+					prevButton: true,
+					animateStartingFrameIn: true,
+					autoPlayDelay: 3000,
+					preloader: true,
+					pauseOnHover: true,
+					preloadTheseFrames: [1]
+				};
+				
+				var sequence = jQuery("#sequence").sequence(options).data("sequence");
+			
+				sequence.afterLoaded = function(){
+					jQuery("#nav").fadeIn(100);
+					jQuery("#nav li:nth-child("+(sequence.settings.startingFrameID)+") img").addClass("active");
+				}
+			
+				sequence.beforeNextFrameAnimatesIn = function(){
+					jQuery("#nav li:not(:nth-child("+(sequence.nextFrameID)+")) img").removeClass("active");
+					jQuery("#nav li:nth-child("+(sequence.nextFrameID)+") img").addClass("active");
+				}
+				
+				jQuery("#nav li").click(function(){
+					jQuery(this).children("img").removeClass("active").children("img").addClass("active");
+					sequence.nextFrameID = jQuery(this).index()+1;
+					sequence.goTo(sequence.nextFrameID);
+				});
+			});
+		</script>
+        
+    </body>
+
+<!-- Mirrored from upsidethemes.net/demo/nictitate/html/index-2.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 03 Feb 2016 10:52:35 GMT -->
+</html>
