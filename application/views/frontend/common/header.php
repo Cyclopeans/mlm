@@ -3,7 +3,7 @@
 
 <head>
         <meta charset="utf-8">
-        <title>Nictitate - HTML5 Responsive Template</title>
+        <title>Kingsmaker Infotech India Pvt. Ltd.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -74,8 +74,9 @@
                             <div class="span12 clearfix">
                                 <p class="hot-line">Call toll free: 0307 472 1942</p>
                                 <div class="top-box clearfix">
-                                    <ul class="top-link clearfix">
-                                        <li><a href="#">Sign In</a>&nbsp;/&nbsp;<a href="#">Register</a></li>                                        
+                                    <ul class="top-link clearfix">                                          
+										<li><a href="<?php echo base_url()."registration"; ?>"><span>Registration</span></a> &nbsp;/&nbsp;
+										<a href="<?php echo base_url()."login"; ?>"><span>Login</span></a></li>
                                     </ul>
                                     <div class="search clearfix">
                                         <a href="#" class="search-icon" title="Search">Search</a>
@@ -113,11 +114,15 @@
                                             </ul>
                                         </li>
                                         <li><a href="<?php echo base_url()."products"; ?>"><span>Products</span></a></li>
+										<li>
+                                            <a href="<?php echo base_url()."rewards"; ?>"><span>Legal Documents</span></a>                                        
+                                        </li>
+										<li>
+                                            <a href="<?php echo base_url()."rewards"; ?>"><span>Downloads</span></a>                                        
+                                        </li>
                                         <li>
                                             <a href="<?php echo base_url()."rewards"; ?>"><span>Rewards</span></a>                                        
-                                        </li>
-                                        <li><a href="<?php echo base_url()."registration"; ?>"><span>Registration</span></a></li>
-                                        <li><a href="<?php echo base_url()."login"; ?>"><span>Login</span></a></li>
+                                        </li>                                        
                                         <li><a href="<?php echo base_url()."contact-us"; ?>"><span>Contact</span></a></li>
                                     </ul><!--main-menu-->
 

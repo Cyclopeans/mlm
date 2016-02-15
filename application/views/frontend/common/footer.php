@@ -5,16 +5,20 @@
 
                         <div class="span4 widget-area-3">
                             <div class="widget">
-                                <h2 class="widget-title">Search</h2>
-                                <div class="search-box clearfix">
-                                    <form action="#" class="search-form clearfix" method="get">
-                                        <input type="text" onBlur="if (this.value == '')
-                                                    this.value = this.defaultValue;" onFocus="if (this.value == this.defaultValue)
-                                                    this.value = '';" value="Search..." name="s" class="search-text">
-                                        <input type="submit" value="" name="submit" class="search-submit">
-                                    </form><!-- search-form -->
-                                </div><!--search-box-->
-                                <p>Duis turpis mauris, sagittis vitae porttitor eu, posuere vel diam. Phasellus fermentum, sapien sit amet molestie mollis, urna est</p>
+                                <h2 class="widget-title">Address</h2>
+								   <address>
+									<strong>KINGMAKER INFOTECH INDIA PVT. LTD.</strong><br>
+											Office No 12<sup>th</sup>, Floor 5 <sup>th</sup>,
+									<br>
+										Megacenter,
+										Hadapsar, Pune - 4110289.
+									<br>
+									<br>
+									<i class="icon-envelope"></i>&nbsp;&nbsp;+91-20- 53265486 / 53265487<br>
+									<i class="icon-envelope"></i>&nbsp;&nbsp;<a href="http://www.kingsmakerinfotech.com">www.kingsmakerinfotech.com</a><br>
+									<i class="icon-envelope"></i>&nbsp;&nbsp;<a href="mailto:customercare@kingsmakerinfotech.com">support@kingsmakerinfotech.com</a>
+								</address>
+                                
                             </div><!--widget-->
                         </div><!--span4-->
 
@@ -29,14 +33,14 @@
                                     <li><a href="#" class="fa fa-dribbble"></a></li>
                                     <li><a href="#" class="fa fa-vimeo-square"></a></li>
                                 </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus diam, dapibus et blandit at, pulvinar vel odio</p>
+                                <p>KEEP IN TOUCH</p>
                             </div><!--widget-->
                         </div><!--span4-->
 
                         <div class="span4 widget-area-5">
                             <div class="widget kopa-newsletter-widget">
                                 <h2 class="widget-title">Newsletter</h2>
-                                <form action="http://upsidethemes.net/demo/nictitate/html/processNewsletterForm.php" method="post" class="newsletter-form clearfix">
+                                <form action="" method="post" class="newsletter-form clearfix">
                                     <p class="input-email clearfix">
                                         <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" name="email" value="Subscribe to newsletter" class="email" size="40">
                                         <input type="submit" value="Subscribe" class="submit">
@@ -55,13 +59,13 @@
                 <div class="wrapper">
                     <div class="row-fluid">
                         <div class="span12">
-                            <p id="copyright">Copyrights. &copy; 2013 by KOPASOFT</p>
+                            <p id="copyright">Copyrights. &copy; 2016 by KINGMAKER INFOTECH INDIA PVT. LTD.</p>
                             <ul id="footer-menu" class="clearfix">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Term & Conditions</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">FAQ</a></li>
                                 <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms of Use</a></li
                             </ul><!--footer-menu-->
                         </div><!--span12-->
                     </div><!--row-fluid-->
@@ -92,43 +96,8 @@
         <script src="<?php echo base_url()?>assets/frontend/js/styleswitch.js"></script>
         <script src="<?php echo base_url()?>assets/frontend/js/custom.js" charset="utf-8"></script>
 
-        <script>
-      /mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
-        if (!pageYOffset) window.scrollTo(0, 1);
-      }, 1000);
-
-      jQuery(document).ready(function(){
-        var options = {
-          nextButton: true,
-          prevButton: true,
-          animateStartingFrameIn: true,
-          autoPlayDelay: 3000,
-          preloader: true,
-          pauseOnHover: true,
-          preloadTheseFrames: [1]
-        };
-
-        var sequence = jQuery("#sequence").sequence(options).data("sequence");
-
-        sequence.afterLoaded = function(){
-          jQuery("#nav").fadeIn(100);
-          jQuery("#nav li:nth-child("+(sequence.settings.startingFrameID)+") img").addClass("active");
-        }
-
-        sequence.beforeNextFrameAnimatesIn = function(){
-          jQuery("#nav li:not(:nth-child("+(sequence.nextFrameID)+")) img").removeClass("active");
-          jQuery("#nav li:nth-child("+(sequence.nextFrameID)+") img").addClass("active");
-        }
-
-        jQuery("#nav li").click(function(){
-          jQuery(this).children("img").removeClass("active").children("img").addClass("active");
-          sequence.nextFrameID = jQuery(this).index()+1;
-          sequence.goTo(sequence.nextFrameID);
-        });
-      });
-    </script>
 
     </body>
 
-<!-- Mirrored from upsidethemes.net/demo/nictitate/html/index-1.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 03 Feb 2016 10:40:51 GMT -->
+
 </html>
