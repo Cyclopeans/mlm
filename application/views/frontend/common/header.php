@@ -182,4 +182,4 @@
                 </div><!--header-bottom-->
             </header><!--page-header-->
 
-            <div id="main-content
+            <div id="main-content">
