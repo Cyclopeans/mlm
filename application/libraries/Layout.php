@@ -1,10 +1,4 @@
 <?php
-/*
- * Class Name	: Layout
- * Description	: This class will act as a layout manager for all the pages
- * Author		: Atindra Biswas
- * Date			: 18/02/2010
- */
 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
@@ -17,7 +11,7 @@ class Layout
     public function __construct($layout = "layout_manager")
     {
         $this->obj =& get_instance();
-        $this->layout = "layout/" . $layout;
+        $this->layout =$layout;
     }
 
     /**
@@ -28,7 +22,7 @@ class Layout
      */
     function set_layout($layout = "layout_manager")
     {
-		$this->layout = "layout/" . $layout;
+		$this->layout = $layout;
     }
 
     /**

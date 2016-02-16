@@ -153,12 +153,6 @@ class CI_Input {
 		// Sanitize global arrays
 		$this->_sanitize_globals();
 
-		// CSRF Protection check
-		if ($this->_enable_csrf === TRUE && ! is_cli())
-		{
-			$this->security->csrf_verify();
-		}
-
 		log_message('info', 'Input Class Initialized');
 	}
 
@@ -606,7 +600,7 @@ class CI_Input {
 		{
 			$_GET = array();
 		}
-		elseif (is_array($_GET))
+		elseif (is_array($_GET) && count($_GET) > 0)
 		{
 			foreach ($_GET as $key => $val)
 			{
@@ -615,7 +609,7 @@ class CI_Input {
 		}
 
 		// Clean $_POST Data
-		if (is_array($_POST))
+		if (is_array($_POST) && count($_POST) > 0)
 		{
 			foreach ($_POST as $key => $val)
 			{
@@ -624,7 +618,7 @@ class CI_Input {
 		}
 
 		// Clean $_COOKIE Data
-		if (is_array($_COOKIE))
+		if (is_array($_COOKIE) && count($_COOKIE) > 0)
 		{
 			// Also get rid of specially treated cookies that might be set by a server
 			// or silly application, that are of no use to a CI application anyway
@@ -652,6 +646,12 @@ class CI_Input {
 
 		// Sanitize PHP_SELF
 		$_SERVER['PHP_SELF'] = strip_tags($_SERVER['PHP_SELF']);
+
+		// CSRF Protection check
+		if ($this->_enable_csrf === TRUE && ! is_cli())
+		{
+			$this->security->csrf_verify();
+		}
 
 		log_message('debug', 'Global POST, GET and COOKIE data sanitized');
 	}
@@ -682,7 +682,7 @@ class CI_Input {
 		/* We strip slashes if magic quotes is on to keep things consistent
 
 		   NOTE: In PHP 5.4 get_magic_quotes_gpc() will always return 0 and
-		         it will probably not exist in future versions at all.
+			 it will probably not exist in future versions at all.
 		*/
 		if ( ! is_php('5.4') && get_magic_quotes_gpc())
 		{
@@ -799,27 +799,19 @@ class CI_Input {
 	 */
 	public function get_request_header($index, $xss_clean = FALSE)
 	{
-		static $headers;
-
-		if ( ! isset($headers))
+		if (empty($this->headers))
 		{
-			empty($this->headers) && $this->request_headers();
-			foreach ($this->headers as $key => $value)
-			{
-				$headers[strtolower($key)] = $value;
-			}
+			$this->request_headers();
 		}
 
-		$index = strtolower($index);
-
-		if ( ! isset($headers[$index]))
+		if ( ! isset($this->headers[$index]))
 		{
 			return NULL;
 		}
 
 		return ($xss_clean === TRUE)
-			? $this->security->xss_clean($headers[$index])
-			: $headers[$index];
+			? $this->security->xss_clean($this->headers[$index])
+			: $this->headers[$index];
 	}
 
 	// --------------------------------------------------------------------
@@ -844,7 +836,7 @@ class CI_Input {
 	 * Test to see if a request was made from the command line.
 	 *
 	 * @deprecated	3.0.0	Use is_cli() instead
-	 * @return	bool
+	 * @return      bool
 	 */
 	public function is_cli_request()
 	{

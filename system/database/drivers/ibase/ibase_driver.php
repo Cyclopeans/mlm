@@ -134,16 +134,24 @@ class CI_DB_ibase_driver extends CI_DB {
 	/**
 	 * Begin Transaction
 	 *
+	 * @param	bool	$test_mode
 	 * @return	bool
 	 */
-	protected function _trans_begin()
+	public function trans_begin($test_mode = FALSE)
 	{
-		if (($trans_handle = ibase_trans($this->conn_id)) === FALSE)
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
 		{
-			return FALSE;
+			return TRUE;
 		}
 
-		$this->_ibase_trans = $trans_handle;
+		// Reset the transaction failure flag.
+		// If the $test_mode flag is set to TRUE transactions will be rolled back
+		// even if the queries produce a successful result.
+		$this->_trans_failure = ($test_mode === TRUE);
+
+		$this->_ibase_trans = ibase_trans($this->conn_id);
+
 		return TRUE;
 	}
 
@@ -154,15 +162,15 @@ class CI_DB_ibase_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_commit()
+	public function trans_commit()
 	{
-		if (ibase_commit($this->_ibase_trans))
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans->depth > 0)
 		{
-			$this->_ibase_trans = NULL;
 			return TRUE;
 		}
 
-		return FALSE;
+		return ibase_commit($this->_ibase_trans);
 	}
 
 	// --------------------------------------------------------------------
@@ -172,15 +180,15 @@ class CI_DB_ibase_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_rollback()
+	public function trans_rollback()
 	{
-		if (ibase_rollback($this->_ibase_trans))
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
 		{
-			$this->_ibase_trans = NULL;
 			return TRUE;
 		}
 
-		return FALSE;
+		return ibase_rollback($this->_ibase_trans);
 	}
 
 	// --------------------------------------------------------------------

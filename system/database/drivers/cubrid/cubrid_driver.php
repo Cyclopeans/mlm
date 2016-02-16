@@ -187,17 +187,25 @@ class CI_DB_cubrid_driver extends CI_DB {
 	/**
 	 * Begin Transaction
 	 *
+	 * @param	bool	$test_mode
 	 * @return	bool
 	 */
-	protected function _trans_begin()
+	public function trans_begin($test_mode = FALSE)
 	{
-		if (($autocommit = cubrid_get_autocommit($this->conn_id)) === NULL)
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
 		{
-			return FALSE;
+			return TRUE;
 		}
-		elseif ($autocommit === TRUE)
+
+		// Reset the transaction failure flag.
+		// If the $test_mode flag is set to TRUE transactions will be rolled back
+		// even if the queries produce a successful result.
+		$this->_trans_failure = ($test_mode === TRUE);
+
+		if (cubrid_get_autocommit($this->conn_id))
 		{
-			return cubrid_set_autocommit($this->conn_id, CUBRID_AUTOCOMMIT_FALSE);
+			cubrid_set_autocommit($this->conn_id, CUBRID_AUTOCOMMIT_FALSE);
 		}
 
 		return TRUE;
@@ -210,16 +218,19 @@ class CI_DB_cubrid_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_commit()
+	public function trans_commit()
 	{
-		if ( ! cubrid_commit($this->conn_id))
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
 		{
-			return FALSE;
+			return TRUE;
 		}
+
+		cubrid_commit($this->conn_id);
 
 		if ($this->auto_commit && ! cubrid_get_autocommit($this->conn_id))
 		{
-			return cubrid_set_autocommit($this->conn_id, CUBRID_AUTOCOMMIT_TRUE);
+			cubrid_set_autocommit($this->conn_id, CUBRID_AUTOCOMMIT_TRUE);
 		}
 
 		return TRUE;
@@ -232,12 +243,15 @@ class CI_DB_cubrid_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_rollback()
+	public function trans_rollback()
 	{
-		if ( ! cubrid_rollback($this->conn_id))
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
 		{
-			return FALSE;
+			return TRUE;
 		}
+
+		cubrid_rollback($this->conn_id);
 
 		if ($this->auto_commit && ! cubrid_get_autocommit($this->conn_id))
 		{

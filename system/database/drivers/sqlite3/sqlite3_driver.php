@@ -134,10 +134,22 @@ class CI_DB_sqlite3_driver extends CI_DB {
 	/**
 	 * Begin Transaction
 	 *
+	 * @param	bool	$test_mode
 	 * @return	bool
 	 */
-	protected function _trans_begin()
+	public function trans_begin($test_mode = FALSE)
 	{
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
+		{
+			return TRUE;
+		}
+
+		// Reset the transaction failure flag.
+		// If the $test_mode flag is set to TRUE transactions will be rolled back
+		// even if the queries produce a successful result.
+		$this->_trans_failure = ($test_mode === TRUE);
+
 		return $this->conn_id->exec('BEGIN TRANSACTION');
 	}
 
@@ -148,8 +160,14 @@ class CI_DB_sqlite3_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_commit()
+	public function trans_commit()
 	{
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
+		{
+			return TRUE;
+		}
+
 		return $this->conn_id->exec('END TRANSACTION');
 	}
 
@@ -160,8 +178,14 @@ class CI_DB_sqlite3_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_rollback()
+	public function trans_rollback()
 	{
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
+		{
+			return TRUE;
+		}
+
 		return $this->conn_id->exec('ROLLBACK');
 	}
 
@@ -223,31 +247,17 @@ class CI_DB_sqlite3_driver extends CI_DB {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Fetch Field Names
+	 * Show column query
 	 *
-	 * @param	string	$table	Table name
-	 * @return	array
+	 * Generates a platform-specific query string so that the column names can be fetched
+	 *
+	 * @param	string	$table
+	 * @return	string
 	 */
-	public function list_fields($table)
+	protected function _list_columns($table = '')
 	{
-		// Is there a cached result?
-		if (isset($this->data_cache['field_names'][$table]))
-		{
-			return $this->data_cache['field_names'][$table];
-		}
-
-		if (($result = $this->query('PRAGMA TABLE_INFO('.$this->protect_identifiers($table, TRUE, NULL, FALSE).')')) === FALSE)
-		{
-			return FALSE;
-		}
-
-		$this->data_cache['field_names'][$table] = array();
-		foreach ($result->result_array() as $row)
-		{
-			$this->data_cache['field_names'][$table][] = $row['name'];
-		}
-
-		return $this->data_cache['field_names'][$table];
+		// Not supported
+		return FALSE;
 	}
 
 	// --------------------------------------------------------------------

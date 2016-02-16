@@ -272,12 +272,25 @@ class CI_DB_mysql_driver extends CI_DB {
 	/**
 	 * Begin Transaction
 	 *
+	 * @param	bool	$test_mode
 	 * @return	bool
 	 */
-	protected function _trans_begin()
+	public function trans_begin($test_mode = FALSE)
 	{
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
+		{
+			return TRUE;
+		}
+
+		// Reset the transaction failure flag.
+		// If the $test_mode flag is set to TRUE transactions will be rolled back
+		// even if the queries produce a successful result.
+		$this->_trans_failure = ($test_mode === TRUE);
+
 		$this->simple_query('SET AUTOCOMMIT=0');
-		return $this->simple_query('START TRANSACTION'); // can also be BEGIN or BEGIN WORK
+		$this->simple_query('START TRANSACTION'); // can also be BEGIN or BEGIN WORK
+		return TRUE;
 	}
 
 	// --------------------------------------------------------------------
@@ -287,15 +300,17 @@ class CI_DB_mysql_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_commit()
+	public function trans_commit()
 	{
-		if ($this->simple_query('COMMIT'))
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
 		{
-			$this->simple_query('SET AUTOCOMMIT=1');
 			return TRUE;
 		}
 
-		return FALSE;
+		$this->simple_query('COMMIT');
+		$this->simple_query('SET AUTOCOMMIT=1');
+		return TRUE;
 	}
 
 	// --------------------------------------------------------------------
@@ -305,15 +320,17 @@ class CI_DB_mysql_driver extends CI_DB {
 	 *
 	 * @return	bool
 	 */
-	protected function _trans_rollback()
+	public function trans_rollback()
 	{
-		if ($this->simple_query('ROLLBACK'))
+		// When transactions are nested we only begin/commit/rollback the outermost ones
+		if ( ! $this->trans_enabled OR $this->_trans_depth > 0)
 		{
-			$this->simple_query('SET AUTOCOMMIT=1');
 			return TRUE;
 		}
 
-		return FALSE;
+		$this->simple_query('ROLLBACK');
+		$this->simple_query('SET AUTOCOMMIT=1');
+		return TRUE;
 	}
 
 	// --------------------------------------------------------------------
