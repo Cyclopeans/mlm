@@ -33,6 +33,7 @@ if (ENVIRONMENT == 'production') {
 }
 
 /*
+
   |--------------------------------------------------------------------------
   | Index File
   |--------------------------------------------------------------------------
@@ -42,6 +43,7 @@ if (ENVIRONMENT == 'production') {
   | variable so that it is blank.
   |
  */
+
 $config['index_page'] = '';
 
 /*
@@ -60,6 +62,7 @@ $config['index_page'] = '';
   | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
  */
 $config['uri_protocol'] = 'REQUEST_URI';
+
 
 
 /*
