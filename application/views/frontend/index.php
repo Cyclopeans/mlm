@@ -111,7 +111,7 @@
 						
 					</div><!--row-fluid-->
 				</div>
->>>>>>> origin/102.1-j-front-end-admin-changes
+
 
                 <div class="wrapper">
                     <div class="row-fluid">

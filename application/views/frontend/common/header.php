@@ -3,11 +3,9 @@
 
 <head>
         <meta charset="utf-8">
-<<<<<<< HEAD
+
         <title>Nictitate - HTML5 Responsive Template</title>
-=======
-        <title>Kingsmaker Infotech India Pvt. Ltd.</title>
->>>>>>> origin/102.1-j-front-end-admin-changes
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">

@@ -102,7 +102,7 @@
         <script src="<?php echo base_url()?>assets/frontend/js/styleswitch.js"></script>
         <script src="<?php echo base_url()?>assets/frontend/js/custom.js" charset="utf-8"></script>
 
-<<<<<<< HEAD
+
         <script>
       /mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
         if (!pageYOffset) window.scrollTo(0, 1);
