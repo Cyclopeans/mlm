@@ -53,11 +53,13 @@ $route['default_controller'] = 'home';
 $route['about-us'] = 'frontend/cms/about_us';
 $route['company-profile'] = 'frontend/cms/company_profile';
 $route['business-plan'] = 'frontend/cms/business_plan';
-$route['products'] = 'frontend/products/products';
-$route['rewards'] = 'frontend/rewards/rewards';
+$route['products'] = 'frontend/products/index';
+$route['rewards'] = 'frontend/rewards/index';
 $route['registration'] = 'frontend/signup/registration';
 $route['login'] = 'frontend/signup/login';
 $route['contact-us'] = 'frontend/cms/contact_us';
+$route['documents'] = 'frontend/cms/documents';
+$route['downloads'] = 'frontend/cms/downloads';
 
 
 $route['404_override'] = '';
