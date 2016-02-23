@@ -3,11 +3,11 @@
         <div class="wrapper">
             <div class="row-fluid">
                 <div class="span12">
-                    <h3>Products</h3>
+                    <h3>Downloads</h3>
                     <div class="breadcrumb clearfix">
                         <a href="index.html">Home</a>
                         <a href="#">Pages</a>
-                        <span class="current-page">Products</span>
+                        <span class="current-page">Downloads</span>
                     </div>
                 </div><!--span12-->
             </div><!--row-fluid-->
@@ -20,7 +20,7 @@
             <div class="widget kopa-testimonial-widget">
                 <h2 class="widget-title">
                     <span class="fa fa-user"></span>
-                    KINGMAKER Products
+                    KINGMAKER Downloads
                 </h2>
                 <div class="list-carousel responsive" >
                     <ul class="kopa-testimonial-carousel">

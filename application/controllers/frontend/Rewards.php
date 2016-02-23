@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cms extends CI_Controller {
+class Rewards extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,35 +23,9 @@ class Cms extends CI_Controller {
         $this->layout->set_layout('layout/main_layout');        
     }
 
-    //Function to show contact us page
-	public function contact_us()
-	{		
-		$this->layout->view('frontend/cms/contact_us');
+	public function index()
+	{
+		
+		$this->layout->view('frontend/rewards/rewards');
 	}
-
-	//Function to show about us page
-	public function about_us()
-	{		
-		$this->layout->view('frontend/cms/about_us');
-	}
-
-	//Function to show company profile page
-	public function company_profile()
-	{		
-		$this->layout->view('frontend/cms/company_profile');
-	}
- 
-        //Function to show documents page
-	public function documents()
-	{		
-		$this->layout->view('frontend/cms/documents');
-	}
-        
-        //Function to show downloads page
-	public function downloads()
-	{		
-		$this->layout->view('frontend/cms/downloads');
-	}
-        
-	
 }

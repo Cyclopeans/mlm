@@ -41,3 +41,4 @@ class Login extends CI_Controller {
         $this->layout->view('admin/login/login', $this->data);
     }
 
+}

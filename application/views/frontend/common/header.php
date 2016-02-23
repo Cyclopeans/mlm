@@ -4,7 +4,7 @@
 <head>
         <meta charset="utf-8">
 
-        <title>Nictitate - HTML5 Responsive Template</title>
+        <title>KINGMAKER INFOTECH PVT. LTD.</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -103,7 +103,7 @@
                         <div class="row-fluid">
                             <div class="span12 clearfix">
                                 <div id="logo-image">
-                                    <a href="index-1.html"><img src="<?php echo base_url()?>assets/frontend/placeholders/logo.png" alt="" /></a>
+                                    <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url()?>assets/frontend/placeholders/logo.png" alt="" width="126px" height="23px"/></a>
                                 </div><!--logo-image-->
                                 <nav id="main-nav">
                                     <ul id="main-menu" class="clearfix">
@@ -120,10 +120,10 @@
                                         <li><a href="<?php echo base_url()."products"; ?>"><span>Products</span></a></li>
 
 										<li>
-                                            <a href="<?php echo base_url()."rewards"; ?>"><span>Legal Documents</span></a>                                        
+                                            <a href="<?php echo base_url()."documents"; ?>"><span>Legal Documents</span></a>                                        
                                         </li>
 										<li>
-                                            <a href="<?php echo base_url()."rewards"; ?>"><span>Downloads</span></a>                                        
+                                            <a href="<?php echo base_url()."downloads"; ?>"><span>Downloads</span></a>                                        
                                         </li>
                                         <li>
                                             <a href="<?php echo base_url()."rewards"; ?>"><span>Rewards</span></a>                                        
