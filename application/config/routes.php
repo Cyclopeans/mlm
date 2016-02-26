@@ -60,7 +60,9 @@ $route['login'] = 'frontend/signup/login';
 $route['contact-us'] = 'frontend/cms/contact_us';
 $route['documents'] = 'frontend/cms/documents';
 $route['downloads'] = 'frontend/cms/downloads';
-
+$route['login'] = 'frontend/affiliate/login';
+$route['register'] = 'frontend/affiliate/register';
+$route['forgot-password'] = 'frontend/affiliate/forgot-password';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
