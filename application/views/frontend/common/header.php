@@ -78,9 +78,14 @@
                                 <div class="top-box clearfix">
 
                                     <ul class="top-link clearfix">                                          
-										<li><a href="<?php echo base_url()."registration"; ?>"><span>Registration</span></a> &nbsp;/&nbsp;
-										<a href="<?php echo base_url()."login"; ?>"><span>Login</span></a></li>
-
+                                        <li>
+                                            <a href="<?php echo base_url()."register"; ?>">
+                                                <span>Registration</span>
+                                            </a> &nbsp;/&nbsp;
+                                            <a href="<?php echo base_url()."login"; ?>">
+                                                <span>Login</span>
+                                            </a>
+                                        </li>
                                     </ul>
                                     <div class="search clearfix">
                                         <a href="#" class="search-icon" title="Search">Search</a>
