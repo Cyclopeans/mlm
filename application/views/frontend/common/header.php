@@ -4,7 +4,7 @@
 <head>
         <meta charset="utf-8">
 
-        <title>Nictitate - HTML5 Responsive Template</title>
+        <title>Welcome to Kingmaker Infotech Pvt Ltd</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -111,7 +111,7 @@
                                             <a href="<?php echo base_url(); ?>"><span>Home</span></a>                                         
                                         </li>
                                         <li>
-                                            <a href="<?php echo base_url()."about-us"; ?>"></i><span>About us</span></a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"></i><span>About us</span></a>
                                             <ul>
                                                 <li><a href="<?php echo base_url()."company-profile"; ?>">Company profile</a></li>
                                                 <li><a href="<?php echo base_url()."business-plan"; ?>">Business Plan</a></li>                                             

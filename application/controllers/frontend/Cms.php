@@ -20,8 +20,7 @@ class Cms extends CI_Controller {
 	 */
 	 function __construct() {
         parent::__construct();        
-        $this->layout->set_layout('main_layout');        
-    }
+		$this->layout->set_layout('layout/main_layout');           }
 
     //Function to show contact us page
 	public function contact_us()
