@@ -1,21 +1,5 @@
 <?php
- 
- /**
- * Name:  Common Helper
- *
- * Author:  Jay Suryawanshi
- *       	For 
- *       	In project 
- *
- *
- * Created:  02.02.2015
- *
- * Description:  For admin Login
- * Rules operations such as insert, update, delete 
- *
- */
- 
- 
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 if (!function_exists('authenticate')) {
@@ -366,6 +350,3 @@ if (!function_exists('get_country_code')) {
     }
 
 }
-
-
-

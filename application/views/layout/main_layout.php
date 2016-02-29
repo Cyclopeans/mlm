@@ -17,9 +17,7 @@
 $this->load->view("frontend/common/header.php");
 ?>
 <div>
-    
     <?php echo $content_for_layout; ?>	
-    
 </div>
 <?php
 $this->load->view("frontend/common/footer.php");

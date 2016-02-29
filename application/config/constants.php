@@ -129,6 +129,8 @@ define('RANKING',$pre_table_name.'ranking');
 define('RESTRICTED_ACTIVITY',$pre_table_name.'restricted_activity');
 define('SETTINGS',$pre_table_name.'settings');
 define('STATIC_PAGES',$pre_table_name.'static_pages');
+define('EPIN_REQUEST',$pre_table_name.'epin_request');
+define('MAIN_AFFILIATE',$pre_table_name.'main_affiliate');
 
 // public resouces path
 //site js,css and image path

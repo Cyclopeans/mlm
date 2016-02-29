@@ -53,16 +53,12 @@ $route['default_controller'] = 'home';
 $route['about-us'] = 'frontend/cms/about_us';
 $route['company-profile'] = 'frontend/cms/company_profile';
 $route['business-plan'] = 'frontend/cms/business_plan';
-$route['products'] = 'frontend/products/index';
-$route['rewards'] = 'frontend/rewards/index';
+$route['products'] = 'frontend/products/products';
+$route['rewards'] = 'frontend/rewards/rewards';
 $route['registration'] = 'frontend/signup/registration';
 $route['login'] = 'frontend/signup/login';
 $route['contact-us'] = 'frontend/cms/contact_us';
-$route['documents'] = 'frontend/cms/documents';
-$route['downloads'] = 'frontend/cms/downloads';
-$route['login'] = 'frontend/affiliate/login';
-$route['register'] = 'frontend/affiliate/register';
-$route['forgot-password'] = 'frontend/affiliate/forgot-password';
+
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

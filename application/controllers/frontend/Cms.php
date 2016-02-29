@@ -20,7 +20,7 @@ class Cms extends CI_Controller {
 	 */
 	 function __construct() {
         parent::__construct();        
-        $this->layout->set_layout('layout/main_layout');        
+        $this->layout->set_layout('main_layout');        
     }
 
     //Function to show contact us page
@@ -40,18 +40,12 @@ class Cms extends CI_Controller {
 	{		
 		$this->layout->view('frontend/cms/company_profile');
 	}
- 
-        //Function to show documents page
-	public function documents()
+
+	//Function to show business plan page
+	public function business_plan()
 	{		
-		$this->layout->view('frontend/cms/documents');
+		$this->layout->view('frontend/cms/business_plan');
 	}
-        
-        //Function to show downloads page
-	public function downloads()
-	{		
-		$this->layout->view('frontend/cms/downloads');
-	}
-        
+
 	
 }

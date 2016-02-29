@@ -3,9 +3,7 @@
 
 <head>
         <meta charset="utf-8">
-
-        <title>KINGMAKER INFOTECH PVT. LTD.</title>
-
+        <title>Nictitate - HTML5 Responsive Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -76,16 +74,8 @@
                             <div class="span12 clearfix">
                                 <p class="hot-line">Call toll free: 0307 472 1942</p>
                                 <div class="top-box clearfix">
-
-                                    <ul class="top-link clearfix">                                          
-                                        <li>
-                                            <a href="<?php echo base_url()."register"; ?>">
-                                                <span>Registration</span>
-                                            </a> &nbsp;/&nbsp;
-                                            <a href="<?php echo base_url()."login"; ?>">
-                                                <span>Login</span>
-                                            </a>
-                                        </li>
+                                    <ul class="top-link clearfix">
+                                        <li><a href="#">Sign In</a>&nbsp;/&nbsp;<a href="#">Register</a></li>                                        
                                     </ul>
                                     <div class="search clearfix">
                                         <a href="#" class="search-icon" title="Search">Search</a>
@@ -108,7 +98,7 @@
                         <div class="row-fluid">
                             <div class="span12 clearfix">
                                 <div id="logo-image">
-                                    <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url()?>assets/frontend/placeholders/logo.png" alt="" width="126px" height="23px"/></a>
+                                    <a href="index-1.html"><img src="<?php echo base_url()?>assets/frontend/placeholders/logo.png" alt="" /></a>
                                 </div><!--logo-image-->
                                 <nav id="main-nav">
                                     <ul id="main-menu" class="clearfix">
@@ -123,17 +113,11 @@
                                             </ul>
                                         </li>
                                         <li><a href="<?php echo base_url()."products"; ?>"><span>Products</span></a></li>
-
-										<li>
-                                            <a href="<?php echo base_url()."documents"; ?>"><span>Legal Documents</span></a>                                        
-                                        </li>
-										<li>
-                                            <a href="<?php echo base_url()."downloads"; ?>"><span>Downloads</span></a>                                        
-                                        </li>
                                         <li>
                                             <a href="<?php echo base_url()."rewards"; ?>"><span>Rewards</span></a>                                        
-                                        </li>                                        
-
+                                        </li>
+                                        <li><a href="<?php echo base_url()."registration"; ?>"><span>Registration</span></a></li>
+                                        <li><a href="<?php echo base_url()."login"; ?>"><span>Login</span></a></li>
                                         <li><a href="<?php echo base_url()."contact-us"; ?>"><span>Contact</span></a></li>
                                     </ul><!--main-menu-->
 
@@ -198,6 +182,4 @@
                 </div><!--header-bottom-->
             </header><!--page-header-->
 
-
-            <div id="main-content">
-
+            <div id="main-content
