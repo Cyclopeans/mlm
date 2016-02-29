@@ -56,12 +56,9 @@
             </li>
             <li class="droplink"><a href=""><span class="menu-icon icon-briefcase"></span><p>Joining Code</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="<?php echo ADMIN_SITE_URL?>product">Product Management</a></li>
-                    <li><a href="<?php echo ADMIN_SITE_URL?>epin">Create EPIN</a></li>
-                    <li><a href="<?php echo ADMIN_SITE_URL?>epin"> EPIN  Request</a></li>
-                    <li><a href="">Joining Code Detail</a></li>
-                    <li><a href="">Cancel Joining Code</a></li>
-                    <li><a href="">Transfer Report</a></li>
+                    <li><a href="<?php echo ADMIN_SITE_URL ?>product">Product Management</a></li>
+                    <li><a href="<?php echo ADMIN_SITE_URL ?>epin">EPIN Management</a></li>
+                    <li><a href="<?php echo ADMIN_SITE_URL ?>epin/epin_request">EPIN  Request</a></li>
                 </ul>
             </li>
             <li class="droplink"><a href="#"><span class="menu-icon icon-bar-chart"></span><p>Payment</p><span class="arrow"></span></a>
@@ -70,22 +67,22 @@
                     <li><a href="">Payment Details</a></li>
                 </ul>
             </li>
-            <li class="droplink"><a href="#"><span class="menu-icon icon-wallet"></span><p>E-Wallet</p><span class="arrow"></span></a>
+<!--            <li class="droplink"><a href="#"><span class="menu-icon icon-wallet"></span><p>E-Wallet</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
                     <li><a href="">Wallet Details</a></li>
                     <li><a href="">Wallet Transaction</a></li>
                     <li><a href="">Fund Request Details</a></li>
                     <li><a href="">Issue Fund Request</a></li>
-                    </ul>
-            </li>
+                </ul>
+            </li>-->
             <li class="droplink"><a href="#"><span class="menu-icon icon-envelope-open"></span><p>Email Management</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="<?php echo ADMIN_SITE_URL?>email/index">Email Template</a></li>
-                    <li><a href="<?php echo ADMIN_SITE_URL?>email/sendemail">Send Email</a></li>
+                    <li><a href="<?php echo ADMIN_SITE_URL ?>email/index">Email Template</a></li>
+                    <li><a href="<?php echo ADMIN_SITE_URL ?>email/sendemail">Send Email</a></li>
                 </ul>
             </li>
-            <li><a href=""><span class="menu-icon icon-settings"></span><p>Settings</p></a></li>
-            
+            <!--<li><a href=""><span class="menu-icon icon-settings"></span><p>Settings</p></a></li>-->
+
         </ul>
     </div><!-- Page Sidebar Inner -->
 </div><!-- Page Sidebar -->

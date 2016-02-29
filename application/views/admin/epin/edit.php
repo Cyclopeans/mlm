@@ -22,9 +22,9 @@
                                 <?php echo validation_errors(); ?>
                             </div>
                         <?php } ?>
-                        <input type="hidden" name="id" value="<?php echo $epin_data['epin_id'] ?>">
-                        <div class="form-group col-md-12"><label>Affiliate Sponser Id</label>
-                            <input type="text" name='sponser_affiliate_id' value="<?php echo set_value('sponser_affiliate_id', $epin_data['sponser_affiliate_id']); ?>"  class="form-control">
+                        <input type="hidden" name="epin_id" value="<?php echo $epin_data['epin_id'] ?>">
+                        <div class="form-group col-md-12"><label>Affiliate Sponser Id (<span style="color:red">optional</span>)</label>
+                            <input type="text" name='sponser_affiliate_id' value="<?php echo set_value('sponser_affiliate_id', ($epin_data['sponser_affiliate_id']>0?$epin_data['sponser_affiliate_id']:'')); ?>"  class="form-control">
                         </div>
                         <div class="form-group col-md-12"><label>Transaction Password</label>
                             <input type="text" name='transaction_password' value="<?php echo set_value('transaction_password', $epin_data['transaction_password']); ?>"  class="form-control">
@@ -41,7 +41,7 @@
                                 <select name="product_id" class="form-control m-b">
                                     <option value=''>Please select </option>
                                     <?php foreach ($product_data as $key => $val) { ?>
-                                        <option value="<?php echo $val['id'] ?>" <?php echo set_select('status', $val['id'], ($epin_data['epin_id'] == $val['id'] ? TRUE : '')) ?>><?php echo $val['name'] ?></option>
+                                        <option value="<?php echo $val['id'] ?>" <?php echo set_select('product_id', $val['id'], ($epin_data['product_id'] == $val['id'] ? TRUE : '')) ?>><?php echo $val['name'] ?></option>
                                     <?php } ?>
                                 </select>
                            
@@ -59,7 +59,7 @@
                         
                         <div class="form-group col-md-12">
                             <div class="col-sm-4 col-sm-offset-2">
-                                <a href="<?php echo SITE_URL ?>admin/product" class="btn btn-default">Cancel</a>
+                                <a href="<?php echo SITE_URL ?>admin/epin" class="btn btn-default">Cancel</a>
                                 <button type="submit" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>

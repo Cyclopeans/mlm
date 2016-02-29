@@ -22,7 +22,7 @@
                                 <?php echo validation_errors(); ?>
                             </div>
                         <?php } ?>
-                        <div class="form-group col-md-6"><label>Sponser Affiliate Id</label>
+                        <div class="form-group col-md-6"><label>Sponser Affiliate Id (<span style="color: red">optional</span>)</label>
                             <input type="text" name='sponser_affiliate_id' value="<?php echo set_value('sponser_affiliate_id'); ?>"  class="form-control">                           
                         </div>
                         <div class="form-group col-md-6"><label>Number of Epin Codes</label>

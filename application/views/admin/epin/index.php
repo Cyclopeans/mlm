@@ -19,7 +19,7 @@
                             <?php echo $this->session->flashdata('success_message'); ?>
                         </div>
                     <?php } ?>
-                    <a href="<?php echo ADMIN_SITE_URL ?>epin/add"><button class="btn btn-success btn-addon m-b-sm" type="button"><i class="fa fa-plus"></i> Add New Product</button></a>
+                    <a href="<?php echo ADMIN_SITE_URL ?>epin/add"><button class="btn btn-success btn-addon m-b-sm" type="button"><i class="fa fa-plus"></i> Add New Epin</button></a>
                     <?php if (!empty($epin_data)) { ?>
 
                         <div class="table-responsive">
@@ -46,8 +46,8 @@
                                             <td><?php echo $val['epin_code'] ?></td>
                                             <td><?php echo $val['name'] ?></td>
                                             <td><?php echo $val['amount'] ?></td>                                            
-                                            <td><?php echo $val['sponser_affiliate_id'] ?></td>
-                                            <td><?php echo ($val['used_affiliate_id']>0?$val['used_affiliate_id']:'---') ?></td>
+                                            <td><?php echo ($val['sponser_affiliate_id'] > 0 ? $val['sponser_affiliate_id'] : '---'); ?></td>
+                                            <td><?php echo ($val['used_affiliate_id'] > 0 ? $val['used_affiliate_id'] : '---') ?></td>
                                             <td><?php echo $val['created_date'] ?></td>
                                             <td><?php echo $val['status'] ?></td>                                           
                                             <td><a href="<?php echo SITE_URL ?>admin/epin/edit/<?php echo $val['epin_id'] ?>"><i class="fa fa-pencil-square-o"></i></a><a href="<?php echo ADMIN_SITE_URL ?>product/delete/<?php echo $val['epin_id'] ?>"><i class="fa fa-trash-o"></i></a></td>

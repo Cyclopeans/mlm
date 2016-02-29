@@ -1,14 +1,14 @@
 <?php
 
 class Email_model extends CI_Model {
-    private $tablename = EMAIL_TEMPLATE;
+    private $tbl_email_template = EMAIL_TEMPLATE;
     public function __construct() {
         parent::__construct();
     }
 
     public function get_template($data = array()) {
         $this->db->select('*');
-        $this->db->from($this->tablename);
+        $this->db->from($this->tbl_email_template);
         if (isset($data['template_key']) && $data['template_key'] != '') {
             $this->db->where('template_key', $data['template_key']);
         }
@@ -30,7 +30,7 @@ class Email_model extends CI_Model {
         if (isset($upd_data['id']) && $upd_data['id'] > 0) {
             $upd_data['modified_date']=date('Y-m-d H:i:s');
             $this->db->where('id', $upd_data['id']);
-            $this->db->update($this->tablename, $upd_data);
+            $this->db->update($this->tbl_email_template, $upd_data);
             return $this->db->affected_rows();
         }
         return 0;
